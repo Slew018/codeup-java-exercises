@@ -5,7 +5,7 @@ public class Solution {
         Parent parent1 = new Parent();
         parent1.parentPrint();
 
-        Subclass subclass1 = new Subclass();
+        Child subclass1 = new Child();
         subclass1.subclassPrint();
         subclass1.parentPrint();
     }
