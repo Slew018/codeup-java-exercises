@@ -1,4 +1,4 @@
 package Company;
 
-public class Employee {
+abstract class Employee {
 }
