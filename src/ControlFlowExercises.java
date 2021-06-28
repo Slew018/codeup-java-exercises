@@ -17,12 +17,19 @@ import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[]args){
 
-        int i = 5;
-        while (i <= 15){
-            System.out.println("i is " + i);
-            i++;
-        }
-
-
-    }
+//        int i = 5;
+//        while (i <= 15) {
+//            System.out.println("i is " + i);
+//            i++;
+//        }
+//        for(int i = 5; i = 15; i++){
+//            System.out.println(i);
+//        }
+//
+//            for (int n = 2; n <= 1000000; n++){
+//                double x = 2 * n;
+//                System.out.println(x);
+//            }
+      }
 }
+
