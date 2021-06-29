@@ -1,25 +1,33 @@
-import java.util.Scanner;
+//import java.util.Scanner;
+//
+//public class MethodsExercises {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        String result = sc.nextLine();
+//        System.out.println(epsilon(result));
+//
+//    }
+//
+//    public static long epsilon(int x, int y) {
+//        int result = x + y;
+//    }
+//
+//    public static long epsilon(int x, int y) {
+//        int result = x - y;
+//    }
+//
+//    public static long epsilon(int x, int y) {
+//        int result = x * y;
+//    }
+//
+//    public static long epsilon(int x, int y) {
+//        int result = x / y;
+//    }
 
-public class MethodsExercises {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String fullName = sc.nextLine();
-        String[] array = fullName.split(" ");
-        System.out.println(epsilon(fullName));
-        System.out.println(epsilon(array[0], array[1]));
-    }
-
-    public static String epsilon(String fullName) {
-        return "Hello " + fullName;
-    }
-
-    public static String epsilon(String firstName, String lastName) {
-        return "Hello " + firstName + " " + lastName;
-    }
 
 
 
-}
+//}
 
 //    TODO: invoke a method that accepts (and returns) the following:
 //        - accepts: your first name and your last name. returns: A
