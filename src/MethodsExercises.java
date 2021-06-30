@@ -1,30 +1,56 @@
-//import java.util.Scanner;
-//
-//public class MethodsExercises {
-//    public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        String result = sc.nextLine();
-//        System.out.println(epsilon(result));
-//
-//    }
-//
-//    public static long epsilon(int x, int y) {
-//        int result = x + y;
-//    }
-//
-//    public static long epsilon(int x, int y) {
-//        int result = x - y;
-//    }
-//
-//    public static long epsilon(int x, int y) {
-//        int result = x * y;
-//    }
-//
-//    public static long epsilon(int x, int y) {
-//        int result = x / y;
-//    }
+import java.util.Scanner;
 
+public class MethodsExercises {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        getInteger(1, 10);
+//        System.out.println(add(4, 5));
+//        System.out.println(sub(4, 4));
+//        System.out.println(multi(5, 5));
+//        System.out.println(mod(10, 4));
+//        System.out.println(div(10, 5));
+    }
 
+    public static int add(int x, int y) {
+        return x + y;
+    }
+
+    public static int sub(int x, int y) {
+        return x - y;
+    }
+
+    public static int multi(int x, int y) {
+        return x * y;
+    }
+
+    public static int div(int x, int y) {
+        return x / y;
+    }
+
+    public static double mod(double x, double y) {
+        return x % y;
+    }
+
+    public static int getInteger(int min, int max) {
+        int userInput;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number between 1 and 10: ");
+        userInput = scanner.nextInt();
+        if (userInput > max || userInput < min) {
+            System.out.println("Enter a valid number");
+            System.out.println("Try again? (yes or no)");
+            String userChoice = scanner.next();
+            if(userChoice.equals("yes")){
+                getInteger(1, 10);
+            }else {
+                System.out.println("Goodbye");
+            }
+        } else if (userInput < max || userInput > min){
+            return userInput;
+        }
+        return userInput;
+    }
+}
 
 
 //}
