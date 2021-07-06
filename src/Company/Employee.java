@@ -7,7 +7,8 @@ package Company;
 abstract class Employee {
     //define properties
     private String salary;
-    private String name;
+    public String nameOfEmployee;
+    public String department;
 
     public String doWork(){
         return "I am working";
