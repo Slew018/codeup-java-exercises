@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class MethodsExercises {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        getInteger(1, 10);
+//        getInteger(1, 10);
+//        factorial();
+        diceRoll();
 //        System.out.println(add(4, 5));
 //        System.out.println(sub(4, 4));
 //        System.out.println(multi(5, 5));
@@ -41,7 +43,7 @@ public class MethodsExercises {
             System.out.println("Try again? (yes or no)");
             String userChoice = scanner.next();
             if(userChoice.equals("yes")){
-                getInteger(1, 10);
+                getInteger(min, max);
             }else {
                 System.out.println("Goodbye");
             }
@@ -49,6 +51,32 @@ public class MethodsExercises {
             return userInput;
         }
         return userInput;
+    }
+
+    public static void factorial () {
+        int userInput = getInteger(1, 10);
+        int resolved = 1;
+        for (int x = 1; x <= userInput; x++){
+            resolved = resolved * x;
+            System.out.println(resolved);
+        }
+    }
+
+    public static void diceRoll () {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Roll the dice");
+        int numberOfSides = sc.nextInt();
+        int dice1 = 1 + (int)(Math.random() * ((numberOfSides - 1) + 1));
+        int dice2 = 1 + (int)(Math.random() * ((numberOfSides - 1) + 1));
+        System.out.println("Die 1 = " + dice1);
+        System.out.println("Die 2 = " + dice2);
+        System.out.println("Try again? (yes or no)");
+        String userChoice = sc.next();
+        if(userChoice.equals("yes")){
+            diceRoll();
+        }else {
+            System.out.println("Goodbye");
+        }
     }
 
 }
