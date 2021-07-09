@@ -4,7 +4,7 @@ public class ServerNameGenerator {
     public static void main(String[] args) {
         String[] Adjectives = {"Hideous", "Obnoxious", "Panicky", "Putrid", "Smelly", "Ashamed", "Combative", "Homely", "Repulsive", "Unsightly"};
 
-        String[] Nouns = {"Llama", "Blobfish", "Frog", "Banana", "Monkey", "Trashcan", "Einsteins", "Canadian", "SpongeBob", "Squirrel"};
+        String[] Nouns = {"Llama", "Blobfish", "Toads", "Armadillo", "Monkey", "Badger", "Panda", "Aardvarks", "Wombats", "Squirrel"};
 
         System.out.println(generator(Adjectives, Nouns));
         }
@@ -12,7 +12,7 @@ public class ServerNameGenerator {
 
         int adjRndm = new Random().nextInt(Adjective.length);
         int nonRndm = new Random().nextInt(Nouns.length);
-        return "Your server name is " + Adjective[adjRndm] + " " + Nouns[nonRndm];
+        return "Your server name is the " + Adjective[adjRndm] + " " + Nouns[nonRndm];
 
     }
 }
