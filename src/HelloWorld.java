@@ -1,11 +1,10 @@
+import java.util.ArrayList;
+
 public class HelloWorld {
+    public static void main(String[] args) {
 
-    public static void main(String[] args){
-        int x = 5;
-        System.out.println(++x);
-        System.out.println(x);
+        ArrayList<Integer> myArrList = new ArrayList<Integer>();
+        myArrList.get(2);
     }
-
 }
-
 
