@@ -15,23 +15,32 @@ public class Input {
     }
 
     public int getInt() {
-        System.out.println("Enter a integer");
-        return this.scanner.nextInt();
+        try {
+            return Integer.valueOf(getString());
+        }catch(NumberFormatException e) {
+            System.out.println("Not an Integer ");
+            return getInt();
+        }
+
     }
 
 
-    public int getInt(int min, int max) {
-        int Num;
-        do {
-            System.out.printf("enter a integer between %d and %d%n", min, max);
-            Num = scanner.nextInt();
-        } while (Num < min || Num > max);
-        return Num;
-    }
+//    public int getInt(int min, int max) {
+//        int Num;
+//        do {
+//            System.out.printf("enter a integer between %d and %d%n", min, max);
+//            Num = scanner.nextInt();
+//        } while (Num < min || Num > max);
+//        return Num;
+//    }
+
+//    public String getString() {
+//        String message = "hello";
+//        return message;
+//    }
 
     public String getString() {
-        String message = "hello";
-        return message;
+        return this.scanner.nextLine();
     }
 
     public boolean yesNo() {
