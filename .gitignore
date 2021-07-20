@@ -9,7 +9,3 @@
 *.class
 out/*
 
-src/Test.java
-src/Person.java
-src/User.java
-src/Greeting.java

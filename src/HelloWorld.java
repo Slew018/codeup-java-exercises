@@ -3,10 +3,12 @@ import java.util.Scanner;
 
 public class HelloWorld {
     public static void main(String[] args) {
-int min = 0;
-int max = 50;
 
-String AlphaNumeric = "Oberon is the best cohort ever!";
+        ArrayList<String> prime = new ArrayList<String>();
+        for (String i : prime){
+
+    }
+    }
 
 //StringBuilder sb = new StringBuilder(n);
 //
@@ -29,6 +31,6 @@ String AlphaNumeric = "Oberon is the best cohort ever!";
 //        }
 
 //    }
-}
+
 
 //- replace getInt and getDouble methods and instead we’re using the result of getString and checking to see if its a double or an int and then throwing that into a try / catch  and if an exception gets thrown, it’s handled in the catch block

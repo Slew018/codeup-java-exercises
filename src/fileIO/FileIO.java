@@ -1,5 +1,7 @@
 package fileIO;
 
+import fileIO.files.IOUtil;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -7,12 +9,37 @@ import java.nio.file.Paths;
 
 public class FileIO {
     public static void main(String[] args) {
-        Path path = getPath("src", "fileIO", "files");
+        init();
+    }
 
+    public static void init() {
+
+        //Try to create the directory
+        Path path = getPath("src", "fileIO", "files");
+        tryCreateFile(path);
+
+        //Try to create the file
+        path = Paths.get(path.toString(), "text.txt");
         tryCreateDirectory(path);
 
-        path = Paths.get(path.toString(), "text.txt");
-        tryCreateFile(path);
+        //Print out the final location of the file
+        System.out.println(path.toAbsolutePath());
+
+
+
+
+//        public static void tryPrintContents(Path path){
+//            try {
+//                IOUtil.printFileContent(IOUtil.readFromFile(path));
+//            } catch (IOException e) {
+//                System.out.println("Unable to read contents of the file at: " + path.toAbsolutePath());
+//            }
+//        }
+
+//    public static void writeToFile(List<String>, content, Path path){
+//
+//            Files.wrte(path, content);
+//        }
     }
 
     public static void tryCreateDirectory(Path pathToCreate) {
