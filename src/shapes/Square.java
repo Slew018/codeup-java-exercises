@@ -1,8 +1,7 @@
 package shapes;
 
-public class Rectangle extends Quadrilateral implements Shape {
-
-    public Rectangle(double side) {
+public class Square extends Quadrilateral{
+    public Square(double side) {
         super(side, side);
     }
 
@@ -10,7 +9,6 @@ public class Rectangle extends Quadrilateral implements Shape {
     public void setLength(double side) {
 
         this.length = side;
-
     }
 
     @Override
